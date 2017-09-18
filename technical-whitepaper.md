@@ -136,3 +136,7 @@ IPFS block storage discussion - https://www.reddit.com/r/ethereum/comments/44qpk
 Consensys, Introducing IPFS - https://medium.com/@ConsenSys/an-introduction-to-ipfs-9bba4860abd0
 
 IPFS whitepaper - https://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv7uL6X1o4k7zrJa3LX/ipfs.draft3.pdf
+
+Plasma whitepaper - http://plasma.io/plasma.pdf
+
+Filecoin whitepaper - https://filecoin.io/filecoin.pdf
