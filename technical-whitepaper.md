@@ -14,16 +14,16 @@ This documents will be separated into the main three future technical / decentra
 1. **Payment Scalability -** Integration with the lightning network on the Bitcoin and Litecoin blockchains. This will facilitate near realtime micropayments to Supload users as their content is generating pageviews. Think of it as streaming payments.
 2. **Permanent Decentralized Storage -** All uploads to Supload will be permanently stored in the uncensorable filecoin network.
 3. **Decentralized Website State -** Utilizing the proposed Plasma smart contract framework on the Ethereum blockchain, computation of the current website state (votes, user authorization, moderation) will be finalized on our own public blockchain. Consensus will be reached, and miners will be rewarded with the SUP token.
-4. **Decentralized Video Compression -** To provide the best possible user experience for full length video, computation needs to be done to separate large video files into small chunks to facilitate fast loading when scrubbing through a videos timeline. The golem network is a possible solution to renting cpu time from a network of users to aid in compressing video.
+4. **Decentralized Image and Video Compression -** User experience is still going to be a priority. Computation needs to be done to separate large video files into small chunks to facilitate fast loading when scrubbing through a videos timeline. Images need to be compressed to different resolutions to enable fast loading on slower internet connections. The golem network is a possible solution to renting cpu time from a network of users to aid in compressing video.
 
 
 ## 1.0 Payment Scalability
 
 With a low threshold of allowing users to withdraw their bitcoin earnings after earning only $1.00 USD, we need to think to the future about how to scale these payments. With any type of growth, Supload could potentially spam the bitcoin blockchain with many low $1.00 transactions.
 
-Users are currently incentivized to withdraw their earnings as soon as they reach the $1.00 minimum withdraw threshold. Anything else is entrusting a 3rd party(Supload) to hold their earnings until they withdraw, is poor bitcoin security from the user standpoint. Entrusting a third party to hold you coins is a bad crypto practice.
+Users are currently incentivized to withdraw their earnings as soon as they reach the $1.00 minimum withdraw threshold. Anything else is entrusting a 3rd party(Supload) to hold their earnings until they withdraw. Entrusting a third party to hold you coins is a bad crypto practice.
 
-The solution is to move these payments off the primary bitcoin blockchain, onto a secondary layer.
+The solution is to move these payments off the primary bitcoin blockchain, onto a secondary payment channel. We can update this payment channel as often as we like. The end user can then close the channel whenever they want, publishing the final transaction to bitcoin blockchain. Finalizing the transaction between Supload and the user.
 
 ### 1.1 :zap: Lightning Network
 
@@ -40,7 +40,6 @@ When the user wants to finalize and receive their funds, they can close the paym
 While the payment channel is open, the user is at no risk of not receiving their fund and wanting to withdraw after every $1 is accrued.
 
 Analytics run every 10 minutes. Updating the amount owed to the Supload user in the contract.
-
 
 ### 1.2 Unidirectional Payment channels
 The payment channel consists of two on chain transactions. Supload creates the payment channel by sending funds into a bitcoin multisig address.
@@ -60,17 +59,18 @@ The payee is free to redeem funds whenever they are happy with the payment.
 Moving the backend storage to the IPFS filesystem allows any uploaded content to Supload to be insured to be available for the rest of time. IPFS is censorship proof file storage that is guaranteed to exist as long as the internet is working.
 
 * **User Benefits -** Video and Image hosting sites are notoriously prone to shutting down or having to censor content due to pressure from governments or corporations. Whether it is legal pressure for the content they are hosting, or the costs of operation become unbearable.
-* **Content Aggregation Site Benefits -** When a content hosting site goes down, the links to that content are still spread throughout the internet. Broken image links is a longstanding problem for message boards and content aggregation such as Reddit. Forcing most moderators to only accept links to one to two of the most trusted centralized hosts.
+* **Message Board Benefits -** When a content hosting site goes down, the links to that content are still spread throughout the internet. Broken image links is a longstanding problem for message boards and content aggregation such as Reddit. Forcing most moderators to only accept links to one to two of the most trusted centralized hosts.
 
 ### 2.1 Data Resolution
-Content on IPFS is addressed by the Base58 encoded hash of the content of the file.
+Content on IPFS is addressed by the base58 encoded hash of the content of the file.
 
 Filecoin uses it's own location resolution system built on a Distributed Hash Table. It's much more efficient than the current IPv4 location based system the internet uses.
 
 ### 2.2 Fetching content if Supload.com does not resolve
+The current state of Supload will be freely available on an Ethereum sub blockchain. Resolving the hash for the content from a Supload URL, will only require communicating with a fully synced Ethereum wallet.
 #```https://www.supload.com/<ipfshash1>```
 
-### 2.3 Efficiancy of data deduplication in IPFS
+### 2.3 Efficiency of data deduplication in IPFS
 IPFS addresses content based on the hash of the objects contents, not by it's location. Duplication of the same images and videos will result in only one copy being stored. This is an extremely efficient method for video and image storage. Duplicate posts of the same data will result in pointing to one copy of the file since the resulting base58 hash will be identical.
 
 
@@ -105,30 +105,42 @@ Commitments are broadcasted periodically to the root blockchain from the child P
 ### 3.3 Blockchains in Blockchains
 
 
-## 4.0 Decentralization
-The end goal of supload is to completely decentralize the storage and computation of the current state of the site. This will create a public, uncensorable network. Anyone can access the images and video, being publicly available on the filecoin cloud. The current state of the site (comments, votes, titles, descriptions) will be held in a publicly accessible blockchain based on the forthcoming Plasma secondary blockchain on the ethereum network.
+
+
+## 4.0 Decentralized Image and Video Compression
+The golem network[5] network offers renting out idle CPU cycles from it's network of users. Docker[] images with binaries for compression can be uploaded to their Application Registry. Golem network users can reference data store in IPFS. Run the necessary computation for compression, and upload the finished product back into IPFS, with a new content referencing the finished product.
+
+### 4.1 Docker images preloaded with FFMPEG
+
+
+
+
+## 5.0 Decentralization
+The end goal of supload is to completely decentralize the storage and computation of the current state of the site. This will create a public, uncensorable network. The current state of the site (comments, votes, titles, descriptions) will be held in a publicly accessible blockchain based on the forthcoming Plasma smart contract Ethereum framework.
 
 The goal is to decentralize the backend, allowing anyone to be able to build frontends to our content. Opening the backend will give developers the ability to create apps and website frontends to our content. They are free to monetize any way they see fit.
 
 This will ensure the long term survival of our blockchain and product. Giving developers access to our backend is giving them access to an already built and thriving community. No longer having to worry about building a product, then getting a user base and building a community. They are free to focus on the interface to our content only. This is in effect, crowdsourcing the user interface.
 
-### 4.1 Crowdsourcing User Interfaces
+### 5.1 Crowdsourcing User Interfaces
 While a single company like Supload may never be able to build the best possible frontend to our content. Opening up the backend will allow rapid experimentation of interfaces by developers. Websites and apps that would normally be our competitor, now strengthen our core product. We will never be able to predict what this perfect interface could look like.
 
-### 4.2 User Interface Incentive
+### 5.2 User Interface Incentive
 
 
 
-## 5.0 Token Utility
+## 6.0 SUP Token Utility
 The safety mechanism in Pulse blockchains is chain halting if bad actors are found on the network. The easiest way to handle a bad miner, is not to try to convince the miner to act nicely, but for everyone to drop out of the chain all together.
 
-### 5.1 Token Bonding
-The primary purpose of the SUP token is the reward to miners to compute the current state of the site. If our tokens primary value is derived from this reward, miners are financially incentive to not attack the chain. If the chain halts, the value of the chain declines, effecting the economic price of the SUP token. Creating significant economic incentive for continued operation.
+This works much in the same way as the Nakimoto consensus.
 
-This makes the SUP token far more effective in protecting the Supload chain than any other currency. Bonding the chain with Ethereum of Bitcoin, bad actors will have no effect on the economic price of either of those coins.
+### 6.1 Token Bonding
+The primary purpose of the SUP token is the reward to miners to compute the current state of the site. If our tokens primary value is derived from this reward, miners are financially incentivized to not attack the chain. If the chain halts, the value of the chain declines, effecting the economic price of the SUP token. Creating significant economic incentive for continued operation.
+
+This makes the SUP token far more effective in protecting the Supload chain than any other currency. If we were to bond the chain with Ethereum or Bitcoin, chain halting will have no effect on the economic price.
 
 
-## 6.0 Acknowledgements
+## 7.0 Acknowledgements
 Taylor Gerring - https://blog.ethereum.org/2014/08/18/building-decentralized-web/
 
 IPFS block storage discussion - https://www.reddit.com/r/ethereum/comments/44qpks/what_would_be_needed_to_store_the_blockchain_as_a/czs5qnh/
@@ -140,3 +152,5 @@ IPFS whitepaper - https://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv7uL6X1o4k7zr
 Plasma whitepaper - http://plasma.io/plasma.pdf
 
 Filecoin whitepaper - https://filecoin.io/filecoin.pdf
+
+Golem Network - http://golemproject.net/doc/DraftGolemProjectWhitepaper.pdf
