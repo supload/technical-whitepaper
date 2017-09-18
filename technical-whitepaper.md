@@ -56,23 +56,24 @@ The payee is free to redeem funds whenever they are happy with the payment.
 
 
 ## 2.0 Permanent Decentralized File Storage
-Content on IPFS is addressed by the Base58 encoded hash of the content of the file.
 
-IPFS allows us to replace a standard CDN with a distributed hash table pointing to file blobs.
+Moving the backend storage to the IPFS filesystem allows any uploaded content to Supload to be insured to be available for the rest of time. IPFS is censorship proof file storage that is guaranteed to exist as long as the internet is working.
 
-Moving the backend storage to the IPFS filesystem allows any uploaded content to Supload to be insured to be available for the rest of time. A censorship proof file storage that is guaranteed to exist long after Supload ceases to exist. This is desirable for users and content aggregation sites such as reddit.
-
-* **User Benefits -** Video and Image hosting sites are notoriously prone to shutting down. Whether it is legal pressure for the content they are hosting, or the costs of operation become unbearable.
-* **Content Aggregation Site Benefits -** When a content hosting site goes down, the links for that content are still spread throughout the internet. Broken image links is a notorious problem for sites like Reddit. Forcing most Reddit moderators to only accept links to one to two well trusted centralized hosts.
+* **User Benefits -** Video and Image hosting sites are notoriously prone to shutting down or having to censor content due to pressure from governments or corporations. Whether it is legal pressure for the content they are hosting, or the costs of operation become unbearable.
+* **Content Aggregation Site Benefits -** When a content hosting site goes down, the links to that content are still spread throughout the internet. Broken image links is a longstanding problem for message boards and content aggregation such as Reddit. Forcing most moderators to only accept links to one to two of the most trusted centralized hosts.
 
 ### 2.1 Data Resolution
+Content on IPFS is addressed by the Base58 encoded hash of the content of the file.
+
 Filecoin uses it's own location resolution system built on a Distributed Hash Table. It's much more efficient than the current IPv4 location based system the internet uses.
 
 ### 2.2 Fetching content if Supload.com does not resolve
 #```https://www.supload.com/<ipfshash1>```
 
 ### 2.3 Efficiancy of data deduplication in IPFS
-IPFS addresses content based on the hash of the objects contents, not by it's location. Duplication of the same images and videos will result in only one copy being stored.
+IPFS addresses content based on the hash of the objects contents, not by it's location. Duplication of the same images and videos will result in only one copy being stored. This is an extremely efficient method for video and image storage. Duplicate posts of the same data will result in pointing to one copy of the file since the resulting base58 hash will be identical.
+
+
 
 
 
@@ -83,7 +84,9 @@ The final step in complete decentralization of Supload, is removing the need to 
 
 The current state of Supload needs to be removed out of a centralized database, and into a public blockchain.
 
-### 3.1 Storage of state database
+### 3.1 IPFS Storage of state database
+IPFS is ideal to use as a database to store the current state of the site. The ability to de-duplicate data works in Suploads favor, since most state updates only change on the newest most popular uploads.
+
 The totality of IPFS objects forms a cryptographically authenticated data structure known as a Merkle DAG (Directed Acyclic Graph).
 
 This is one of the most exciting use cases for IPFS. A blockchain has a natural DAG structure in that past blocks are always linked by their hash from later ones.
@@ -117,11 +120,12 @@ While a single company like Supload may never be able to build the best possible
 
 
 ## 5.0 Token Utility
-The safety mechanism in Pulse blockchains is chain halting if bad actors are found on the network. The easiest way to handle a bad miner, is not to try to convince the miner to act nicely, but for everyone to drop out of the chain all together. If miners are earning fees for processing Suploads data, from the cost of inclusion of uploads into the chain.
+The safety mechanism in Pulse blockchains is chain halting if bad actors are found on the network. The easiest way to handle a bad miner, is not to try to convince the miner to act nicely, but for everyone to drop out of the chain all together.
 
 ### 5.1 Token Bonding
-At this point, the primary purpose of the SUP token is the reward to miners to compute the state of the site. If our tokens primary value is this, chain halting is discouraged. If the chain halts, the value of the chain declines, creating significant economic incentive for continued operation.
+The primary purpose of the SUP token is the reward to miners to compute the current state of the site. If our tokens primary value is derived from this reward, miners are financially incentive to not attack the chain. If the chain halts, the value of the chain declines, effecting the economic price of the SUP token. Creating significant economic incentive for continued operation.
 
+This makes the SUP token far more effective in protecting the Supload chain than any other currency. Bonding the chain with Ethereum of Bitcoin, bad actors will have no effect on the economic price of either of those coins.
 
 
 ## 6.0 Acknowledgements
