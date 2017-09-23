@@ -1,6 +1,6 @@
 # Supload Technical Whitepaper
 
-The current internet is nowhere near as privacy secure or censorship resistant as we desire. Centralized internet services have found ways to profit from your personal data, allowing them to offer their products for free. This has effectively kickstarted the global adoption of the internet.
+The current internet is nowhere near as privacy secure or censorship resistant as we desire. Centralized internet services have found ways to profit from our personal data, allowing them to offer their products for free. This has effectively kickstarted the global adoption of the internet.
 
 It is just in recent years that we've begun to see the shortcomings of this model. Corporate data silos are treasure troves for hackers, requiring us to trust these institutions to be able to effectively protect their networks. A single corporation is always susceptible to censorship from governments and advertisers.
 
@@ -13,23 +13,23 @@ This document is separated into the four main decentralized features needed to a
 1. **Payment Scalability -** Integration with the lightning network on the Bitcoin and Litecoin blockchains. This will facilitate near realtime micropayments to Supload users as their content is generating pageviews. Think of it as streaming payments.
 2. **Permanent Decentralized Storage -** All uploads to Supload will be permanently stored in the uncensorable IPFS data network. Your images and videos can never be removed.
 3. **Decentralized Computation -** Utilizing the proposed Plasma smart contract framework on the Ethereum blockchain, computation of the current website state (new posts, votes, user authorization, moderation) will be available on our own public blockchain. Computation by miners will be rewarded with the SUP token.
-4. **Decentralized Image and Video Compression -** User experience still needs to be a priority. Heavy computation needs to be done to separate large video files into small chunks to facilitate different resolution playback depending on available bandwidth. Images need to be compressed to different resolutions to enable fast loading on slower internet connections. The golem network is a possible solution to renting cpu time from a network of users to run the necessary computation.
+4. **Decentralized Image and Video Compression -** User experience still needs to be a priority. Heavy computation needs to be done to separate large video files into small chunks to facilitate different resolution playback depending on available bandwidth. Images need to be compressed to different resolutions to enable fast loading on slower internet connections and smaller mobile screens. The golem network is a possible solution to renting cpu time from a network of users to run the necessary computation.
 
 
 
 ## Current State of Decentralized Applications
 
-Not all the necessary applications exist today to completely decentralize Supload. Fortunately, everything we need is currently under development. Thanks to the recent rise in fundraising from the initial coin offering model, the speed at which the necessary applications are being built is being greatly expedited. The decentralized internet is coming, rapidly. ICO's have assured that. We want to be one of the first consumer applications that connects all of these applications into a easy to use product that can achieve mass adoption.
+Not all the necessary applications exist today to completely decentralize Supload. Fortunately, everything we need is currently under development. Thanks to the recent rise in fundraising from the initial coin offering fundraising model, the speed at which the necessary applications are being built is being greatly expedited. The decentralized internet is coming, and quickly. ICO's have assured that. We want to be one of the first consumer applications that connects all of these applications into a easy to use product that can achieve mass adoption.
 
 With that said, the problems these applications are trying to solve are extremely difficult computer science problems that have never been solved before. So putting exact completion dates on each of these features is very difficult. Here is how we see the current landscape.
 
 ![Current State of Decentralized Applications](https://i.supload.com/rygoFMFls-.png)
 
-Unfortunately, the biggest and most important advancement, Plasma, needs to occur primarily at the protocol level. We're just not seeing the rapid development on the protocol level that is happening with startup applications that are creating a new token to sell for funding. The economic incentive is just far greater than contributing your time to advance a protocol like Ethereum. But the potential benefit that a scaling solution like Plasma or Lighting could produce is immense and necessary. So this raises a difficult question. Where should the money to fund protocol level development come from? Private funding? Crowd funding?
+Unfortunately, the biggest and most important feature, Plasma, needs to occur primarily at the protocol level. We're just not seeing the rapid development on the protocol level that is happening with startup applications that are creating a new token to sell for funding. The economic incentive is just far greater than contributing your time to advance a protocol like Ethereum. But the potential benefit that a scaling solution like Plasma or Lighting could produce is immense and necessary. So this raises a difficult question. Where should the money to fund protocol level development come from? Private funding? Crowd funding?
 
 That is why we're going to commit, after the successful completion of our token sale, a full time developer to helping solve the blockchain scalability problem. This roadmap relies heavily on the Plasma Ethereum framework, it only makes sense for us to contribute full time work for it's completion.
 
-Upon full funding in our token sale, we will also commit a full time developer to helping the open source projects surrounding the blockchain ecosystem. HLS streaming of video from IPFS sources is a currently open issue on github for example. Or committing code to the wallet manufacturers with lightning network integration.
+Upon full funding in our token sale, we will also commit a full time developer to helping the open source projects surrounding the blockchain ecosystem. HLS streaming of video from IPFS sources is a currently open issue on github for example. Or committing code to the wallet manufacturers to help with lightning network integration.
 
 We hope this start a new trend in tokenized applications. If you are a well funded startup relying on future protocol and open source products, hire full time developers to help speed up the future decentralized web.
 
@@ -39,7 +39,7 @@ We hope this start a new trend in tokenized applications. If you are a well fund
 
 With a low threshold of allowing users to withdraw their bitcoin earnings after earning only $1.00 USD, we need to think to the future about how to scale these payments. With sufficient growth, Supload could potentially spam the bitcoin blockchain with many low $1.00 transactions.
 
-Users are currently incentivized to withdraw their earnings as soon as they reach the $1.00 minimum withdraw threshold. Anything else is putting trust in a 3rd party(Supload) to hold their earnings until they withdraw. Entrusting a third party to hold your coins is bad cryptocurrency security.
+Users are currently incentivized to withdraw their earnings as soon as they reach the $1.00 minimum withdraw threshold. Anything else is putting trust in a 3rd party(Supload) to hold their earnings until they withdraw. Entrusting a third party to hold your coins is bad cryptocurrency security practice.
 
 The solution is to move these payments off the primary bitcoin blockchain, onto a secondary payment channel. We can update this payment channel as often as we like. The end user can then close the channel whenever they want, publishing the final transaction to the bitcoin blockchain. Finalizing the transaction between Supload and the user. With no risk to the payee at any point.
 
