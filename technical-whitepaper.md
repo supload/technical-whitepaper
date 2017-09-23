@@ -10,7 +10,7 @@ This whitepaper is an outline of how we plan to achieve a fully decentralized an
 
 This document is separated into the four main decentralized features needed to achieve this.
 
-1. **Payment Scalability -** Integration with the lightning network on the Bitcoin and Litecoin blockchains. This will facilitate near realtime micropayments to Supload users as their content is generating pageviews. Think of it as streaming payments.
+1. **Payment Scalability -** Integration with the Lightning Network on the Bitcoin and Litecoin blockchains. This will facilitate near realtime micropayments to Supload users as their content is generating pageviews. Think of it as streaming payments.
 2. **Permanent Decentralized Storage -** All uploads to Supload will be permanently stored in the uncensorable IPFS data network. Your images and videos can never be removed.
 3. **Decentralized Computation -** Utilizing the proposed Plasma smart contract framework on the Ethereum blockchain, computation of the current website state (new posts, votes, user authorization, moderation) will be available on our own public blockchain. Computation by miners will be rewarded with the SUP token.
 4. **Decentralized Image and Video Compression -** User experience still needs to be a priority. Heavy computation needs to be done to separate large video files into small chunks to facilitate different resolution playback depending on available bandwidth. Images need to be compressed to different resolutions to enable fast loading on slower internet connections and smaller mobile screens. The golem network is a possible solution to renting cpu time from a network of users to run the necessary computation.
@@ -29,7 +29,7 @@ Unfortunately, the biggest and most important feature, Plasma, needs to occur pr
 
 That is why we're going to commit, after the successful completion of our token sale, a full time developer to helping solve the blockchain scalability problem. This roadmap relies heavily on the Plasma Ethereum framework, it only makes sense for us to contribute full time work for it's completion.
 
-Upon full funding in our token sale, we will also commit a full time developer to helping the open source projects surrounding the blockchain ecosystem. HLS streaming of video from IPFS sources is a currently open issue on github for example. Or committing code to the wallet manufacturers to help with lightning network integration.
+Upon full funding in our token sale, we will also commit a full time developer to helping the open source projects surrounding the blockchain ecosystem. HLS streaming of video from IPFS sources is a currently open issue on github for example. Or committing code to the wallet manufacturers to help with Lightning Network integration.
 
 We hope this starts a new trend in tokenized applications. If you are a well funded startup relying on future protocol and open source products, hire full time developers to help speed up the future decentralized web.
 
@@ -41,7 +41,7 @@ With a low threshold of allowing users to withdraw their bitcoin earnings after 
 
 Users are currently incentivized to withdraw their earnings as soon as they reach the $1.00 minimum withdraw threshold. Anything else is putting trust in a 3rd party(Supload) to hold their earnings until they withdraw. Entrusting a third party to hold your coins is bad cryptocurrency security practice.
 
-The solution is to move these payments of off the primary bitcoin blockchain, onto a secondary payment channel. We can update this payment channel as often as we like. The end user can then close the channel whenever they want, publishing the final transaction to the bitcoin blockchain. Finalizing the transaction between Supload and the user. With no risk to the payee at any point.
+The solution is to move these payments off of the primary bitcoin blockchain, onto a secondary payment channel. We can update this payment channel as often as we like. The end user can then close the channel whenever they want, publishing the final transaction to the bitcoin blockchain. Finalizing the transaction between Supload and the user. With no risk to the payee at any point.
 
 ### 1.1 :zap: Lightning Network
 
@@ -103,10 +103,10 @@ Every block in the Supload chain will have a merkleized trie of the current stat
 ## 3.0 Decentralized State Computation
 The most difficult step is moving the current state of Supload out of a centralized database, and into a public blockchain. Most early blockchains were never meant to be more than transactional ledgers. This changed with the launch of Ethereum. Ethereum was the first to introduce a turing complete virtual machine that could be programmed to do any type of computation on the blockchain. But this has its shortcomings.
 
-Presently every Ethereum miner has to independently run each smart contract code in its entirety. That makes smart contracts expensive to run small, quick computations that Supload would require. Also, ethereum’s variable gas limit restricts the number of computation steps that smart contracts can perform.
+Presently every Ethereum miner has to independently run each smart contract code in its entirety. That makes smart contracts expensive to run small, quick computations that Supload would require. Also, Ethereum’s variable gas limit restricts the number of computation steps that smart contracts can perform.
 
-### 3.1 Plasma ethereum framework
-Plasma is a framework of smart contracts designed to enable massive scaling and computation on the Ethereum blockchain. We see this as a way to handle the validation of the state of Supload in a blockchain. The root ethereum contract processes only a very small amount of commitment from child blockchains, drastically reducing fees and allowing a huge number of computations.
+### 3.1 Plasma Ethereum framework
+Plasma is a framework of smart contracts designed to enable massive scaling and computation on the Ethereum blockchain. We see this as a way to handle the validation of the state of Supload in a blockchain. The root Ethereum contract processes only a very small amount of commitment from child blockchains, drastically reducing fees and allowing a huge number of computations.
 
 Commitments are broadcasted periodically to the root blockchain from the child Plasma chains. Only a tiny amount of commitments are needed for the entire computation of Supload.
 
