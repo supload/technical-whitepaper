@@ -37,28 +37,28 @@ We hope this starts a new trend in tokenized applications. If you are a well fun
 
 ## 1.0 Payment Scalability
 
-With a low threshold of allowing users to withdraw their bitcoin earnings after earning only $1.00 USD, we need to think to the future about how to scale these payments. With sufficient growth, Supload could potentially spam the bitcoin blockchain with many low $1.00 transactions.
+With a low threshold of allowing users to withdraw their Bitcoin earnings after earning only $1.00 USD, we need to think to the future about how to scale these payments. With sufficient growth, Supload could potentially spam the Bitcoin blockchain with many low $1.00 transactions.
 
 Users are currently incentivized to withdraw their earnings as soon as they reach the $1.00 minimum withdraw threshold. Anything else is putting trust in a 3rd party(Supload) to hold their earnings until they withdraw. Entrusting a third party to hold your coins is bad cryptocurrency security practice.
 
-The solution is to move these payments off of the primary bitcoin blockchain, onto a secondary payment channel. We can update this payment channel as often as we like. The end user can then close the channel whenever they want, publishing the final transaction to the bitcoin blockchain. Finalizing the transaction between Supload and the user. With no risk to the payee at any point.
+The solution is to move these payments off of the primary Bitcoin blockchain, onto a secondary payment channel. We can update this payment channel as often as we like. The end user can then close the channel whenever they want, publishing the final transaction to the Bitcoin blockchain. Finalizing the transaction between Supload and the user. With no risk to the payee at any point.
 
 ### 1.1 :zap: Lightning Network
 
 The Lightning Network allows us to stream payments to our users. Lightning allows Supload the ability to pay users every ten minutes when our analytics have finished running.
 
-The Lightning Network gives us the unprecedented ability to transact very small amounts of bitcoin in near realtime,  for very little fees. This will be a feature that is available to the highest ranked users on Supload. A few of our biggest content creators are responsible for a majority of the payments.
+The Lightning Network gives us the unprecedented ability to transact very small amounts of Bitcoin in near realtime,  for very little fees. This will be a feature that is available to the highest ranked users on Supload. A few of our biggest content creators are responsible for a majority of the payments.
 
-The Lightning Network will provide an extra layer of trust for users. As the payments are being updated, the payee is receiving a new signed Hashed Timelock Contract from Supload. With the committed amount of payment. At that point, it's impossible for the payer (Supload) to go back on the agreed upon payment amount. The funds are then being held in a contract on the bitcoin blockchain.
+The Lightning Network will provide an extra layer of trust for users. As the payments are being updated, the payee is receiving a new signed Hashed Timelock Contract from Supload. With the committed amount of payment. At that point, it's impossible for the payer (Supload) to go back on the agreed upon payment amount. The funds are then being held in a contract on the Bitcoin blockchain.
 
 The amount owed to the content creator will update every 10 minutes when we run our analytics, adjusting for pageviews in that period of time.
 
-When the user wants to finalize and receive their funds, they can close the payment channel with Supload. The users wallet will the take the most current Timelock Contact and publish it to the bitcoin blockchain. Only one transaction hits the bitcoin blockchain.
+When the user wants to finalize and receive their funds, they can close the payment channel with Supload. The users wallet will the take the most current Timelock Contact and publish it to the Bitcoin blockchain. Only one transaction hits the Bitcoin blockchain.
 
 While the payment channel is open, the user is at no risk of not receiving their funds and wanting to withdraw after every $1 is accrued.
 
 ### 1.2 Unidirectional Payment channels
-The payment channel consists of two on chain transactions. Supload creates the payment channel by sending funds into a bitcoin multisig address.
+The payment channel consists of two on chain transactions. Supload creates the payment channel by sending funds into a Bitcoin multisig address.
 
 Both Supload and the payee party will agree to enter into a off-chain payment channel.
 
