@@ -1,19 +1,19 @@
 # Supload Technical Whitepaper
 
-The current internet is nowhere near as privacy secure or censorship resistant as we desire. Centralized internet services have found ways to profit from our personal data, allowing them to offer their products for free. This has effectively kickstarted the global adoption of the internet.
+The current Internet is nowhere near as privacy secure or censorship resistant as we desire. Centralized internet services have found ways to profit from our personal data, allowing them to offer their products for free. This has effectively kickstarted the global adoption of the internet.
 
-It is just in recent years that we've begun to see the shortcomings of this model. Corporate data silos are treasure troves for hackers, requiring us to trust these institutions to be able to effectively protect their networks. A single corporation is always susceptible to censorship from governments and advertisers.
+In recent years, we have begun to see the shortcomings of this model. Corporate data silos are treasure troves for hackers, and we have no choice but to trust these institutions to effectively protect their networks. Furthermore, a single corporation is always susceptible to censorship from governments and advertisers.
 
-The coming decentralized internet is an attempt to move our personal data and privacy out of centralized institutions.
+The coming decentralized internet is an attempt to move our personal data and privacy out of centralized institutions, giving the power back to us.
 
-This whitepaper is an outline of how we plan to achieve a fully decentralized and server less backend of Supload image and video hosting. The end goal is a permanent, public and uncensorable copy of all our hosted content. All images, video, website state and tools to interact with this data will be freely available to the public.
+This whitepaper is an outline on how we plan to achieve a fully decentralized and serverless backend for the Supload image and video hosting service. The end goal is a permanent, public, and uncensorable copy of all our hosted content. All images, videos, website states, and tools to interact with this data will be freely available to the public.
 
-This document is separated into the four main decentralized features needed to achieve this.
+This document is separated into the four main decentralized features needed to achieve our vision.
 
 1. **Payment Scalability -** Integration with the Lightning Network on the Bitcoin and Litecoin blockchains. This will facilitate near realtime micropayments to Supload users as their content is generating pageviews. Think of it as streaming payments.
 2. **Permanent Decentralized Storage -** All uploads to Supload will be permanently stored in the uncensorable IPFS data network. Your images and videos can never be removed.
 3. **Decentralized Computation -** Utilizing the proposed Plasma smart contract framework on the Ethereum blockchain, computation of the current website state (new posts, votes, user authorization, moderation) will be available on our own public blockchain. Computation by miners will be rewarded with the SUP token.
-4. **Decentralized Image and Video Compression -** User experience still needs to be a priority. Heavy computation needs to be done to separate large video files into small chunks to facilitate different resolution playback depending on available bandwidth. Images need to be compressed to different resolutions to enable fast loading on slower internet connections and smaller mobile screens. The golem network is a possible solution to renting cpu time from a network of users to run the necessary computation.
+4. **Decentralized Image and Video Compression -** User experience still needs to be a priority. Heavy computation needs to be done to separate large video files into small chunks to facilitate different resolution playback depending on available bandwidth. Images need to be compressed to different resolutions to enable fast loading on slower internet connections and smaller mobile screens. The Golem Project is a possible solution to renting CPU time from a network of users to run the necessary computation.
 
 
 
