@@ -19,7 +19,7 @@ This document is separated into the four main decentralized features needed to a
 
 ## Current State of Decentralized Applications
 
-Not all the necessary applications exist today to completely decentralize Supload. Fortunately, everything we need is currently under development. Thanks to the recent rise in fundraising from the initial coin offering fundraising model, the speed at which the necessary applications are being built is being greatly expedited. The decentralized internet is coming, and quickly. ICO's have assured that. We want to be one of the first consumer applications that connects all of these applications into a easy to use product that can achieve mass adoption.
+Not all the necessary applications exist today to completely decentralize Supload. Fortunately, everything we need is currently under development. Thanks to the recent rise in fundraising from the Initial Coin Offering fundraising model, the speed at which the necessary applications are being built has been greatly expedited. The decentralized internet is coming quickly. ICO's have assured that. Supload aims to be one of the first fully decentralized consumer applications. We believe by achieving mass adoption of this easy-to-use product, we can not only promote mass adoption of the technology we use, but also the benefits of decentralization.
 
 With that said, the problems these applications are trying to solve are extremely difficult computer science problems that have never been solved before. So putting exact completion dates on each of these features is very difficult. Here is how we see the current landscape.
 
