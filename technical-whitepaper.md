@@ -19,19 +19,19 @@ This document is separated into the four main decentralized features needed to a
 
 ## Current State of Decentralized Applications
 
-Not all the necessary applications exist today to completely decentralize Supload. Fortunately, everything we need is currently under development. Thanks to the recent rise in fundraising from the Initial Coin Offering fundraising model, the speed at which the necessary applications are being built has been greatly expedited. The decentralized internet is coming quickly. ICO's have assured that. Supload aims to be one of the first fully decentralized consumer applications. We believe by achieving mass adoption of this easy-to-use product, we can not only promote mass adoption of the technology we use, but also the benefits of decentralization.
+Although, the necessary applications to completely decentralize Supload do not exist, they are all currently under development. Thanks to the recent rise in fundraising from the Initial Coin Offering fundraising model, the speed at which the necessary applications are being built has been greatly expedited. The decentralized internet is coming, and quickly. ICO's have assured that. Supload aims to be one of the first fully decentralized consumer applications. We believe by achieving mass adoption of this easy-to-use product, we can not only promote mass adoption of the technology we use, but also the benefits of decentralization.
 
-With that said, the problems these applications are trying to solve are extremely difficult computer science problems that have never been solved before. So putting exact completion dates on each of these features is very difficult. Here is how we see the current landscape.
+With that said, the problems these applications are trying to solve are extremely difficult computer science problems that we have yet to find solutions for. So putting exact completion dates on each of these features is very difficult. Here is how we see the current landscape.
 
 ![Current State of Decentralized Applications](https://i.supload.com/rygoFMFls-.png)
 
-Unfortunately, the biggest and most important feature, Plasma, needs to occur primarily at the protocol level. We're just not seeing the rapid development on the protocol level that is happening with startup applications that are creating a new token to sell for funding. The economic incentive is just far greater than contributing your time to advance a protocol like Ethereum. But the potential benefit that a scaling solution like Plasma or Lighting could produce is immense and necessary. So this raises a difficult question. Where should the money to fund protocol level development come from? Private funding? Crowd funding?
+Unfortunately, the biggest and most important feature, Plasma, needs to occur primarily at the protocol level. We are just not seeing the rapid development on the protocol level that is happening with startup applications that are able to create a new token to sell for funding. The economic incentive is just far greater than contributing your time to advance a protocol like Ethereum. But the potential benefit that a scaling solution like Plasma or Lighting could produce is immense and necessary. So this raises a difficult question. Where should the money to fund protocol level development come from? Private funding? Crowd funding?
 
-That is why we're going to commit, after the successful completion of our token sale, a full time developer to helping solve the blockchain scalability problem. This roadmap relies heavily on the Plasma Ethereum framework, it only makes sense for us to contribute full time work for it's completion.
+That is why we will commit, after the successful completion of our token sale, full time developers to helping solve the blockchain scalability problem. This roadmap relies heavily on the Plasma Ethereum framework, it only makes sense for us to contribute full time work to its completion.
 
-Upon full funding in our token sale, we will also commit a full time developer to helping the open source projects surrounding the blockchain ecosystem. HLS streaming of video from IPFS sources is a currently open issue on github for example. Or committing code to the wallet manufacturers to help with Lightning Network integration.
+Upon full funding in our token sale, we will also commit full time developers to helping the open source projects surrounding the blockchain ecosystem. For example, HLS streaming of video from IPFS sources is a currently open issue on Github. Or committing code to the wallet manufacturers to help with Lightning Network integration.
 
-We hope this starts a new trend in tokenized applications. If you are a well funded startup relying on future protocol and open source products, hire full time developers to help speed up the future decentralized web.
+We hope this starts a new trend in tokenized applications. If you are a well funded startup relying on future protocols and open source products, you are morally obligated to hire full time developers for the future decentralized web.
 
 
 
