@@ -112,11 +112,15 @@ Commitments are broadcasted periodically to the root blockchain from the child P
 
 TODO: Move this to Sup token section at bottom? Decentralized applications can be reframed as a MapReduce problem with economic incentives for correct activity bonded by the Sup token.
 
-### 3.3 Blockchains in blockchains
+### 3.3 Scalability with blockchains in blockchains
 
-TODO: describe the scalability of being able to run multiple blockchains within Plasma. Reducing the miner load and increase scalability. One idea is to break the site into different categories. Vlogs, memes, documentaries, photography, etc. Shard the state effectively, into a seperate blockchain for each.
+Plasma offers the ability to scale computation by separating data into multiple sub blockchains from the root Plasma chain. This would allow Supload to scale infinitely without running into a problem of block size getting so large miners won't want to participate.
 
-TODO: [Image of multiple blockchains in plasma]
+The state on the site can be broken into different categories depending on the content of the upload. Vlogs, memes, documentaries, photography, for example. Sharding the state files allows miners to only focus on their one set of necessary data. They then report their computation to the chain below. The final merkle hash after coalescing all the chains data is the only thing reported to the root Ethereum chain.
+
+This allows a visitor of the site to move to the chain tip of the category they are interested in viewing. They can then go back X number of blocks to view a weeks worth of posts, for example. Get the necessary state files from each block from IPFS.
+
+![Plasma multiple blockchains](https://i.supload.com/Hkg1bhVvjZ.png)
 
 
 
