@@ -1,10 +1,10 @@
 # Supload Technical Whitepaper
 
-The current Internet is nowhere near as privacy secure or censorship resistant as we desire. Centralized internet services have found ways to profit from our personal data, allowing them to offer their products for free. This has effectively kickstarted the global adoption of the internet.
+The current Internet is nowhere near as privacy secure or censorship resistant as we desire. Centralized Internet services have found ways to profit from our personal data, allowing them to offer their products for free. This has effectively kickstarted the global adoption of the Internet.
 
 In recent years, we have begun to see the shortcomings of this model. Corporate data silos are treasure troves for hackers, and we have no choice but to trust these institutions to effectively protect their networks. Furthermore, a single corporation is always susceptible to censorship from governments and advertisers.
 
-The coming decentralized internet is an attempt to move our personal data and privacy out of centralized institutions, giving the power back to us.
+The coming decentralized Internet is an attempt to move our personal data and privacy out of centralized institutions, giving the power back to us.
 
 This whitepaper is an outline on how we plan to achieve a fully decentralized and serverless backend for the Supload image and video hosting service. The end goal is a permanent, public, and uncensorable copy of all our hosted content. All images, videos, website states, and tools to interact with this data will be freely available to the public.
 
@@ -13,7 +13,7 @@ This document is separated into the four main decentralized features needed to a
 1. **Payment Scalability -** Integration with the Lightning Network on the Bitcoin and Litecoin blockchains. This will facilitate near realtime micropayments to Supload users as their content is generating pageviews. Think of it as streaming payments.
 2. **Permanent Decentralized Storage -** All uploads to Supload will be permanently stored in the uncensorable IPFS data network. Your images and videos can never be removed.
 3. **Decentralized Computation -** Utilizing the proposed Plasma smart contract framework on the Ethereum blockchain, computation of the current website state (new posts, votes, user authorization, moderation) will be available on our own public blockchain. Computation by miners will be rewarded with the SUP token.
-4. **Decentralized Image and Video Compression -** User experience still needs to be a priority. Heavy computation needs to be done to separate large video files into small chunks to facilitate different resolution playback depending on available bandwidth. Images need to be compressed to different resolutions to enable fast loading on slower internet connections and smaller mobile screens. The Golem Project is a possible solution to renting CPU time from a network of users to run the necessary computation.
+4. **Decentralized Image and Video Compression -** User experience still needs to be a priority. Heavy computation needs to be done to separate large video files into small chunks to facilitate different resolution playback depending on available bandwidth. Images need to be compressed to different resolutions to enable fast loading on slower Internet connections and smaller mobile screens. The Golem Project is a possible solution to renting CPU time from a network of users to run the necessary computation.
 
 
 
@@ -73,17 +73,17 @@ TODO: flesh out this description
 
 ## 2.0 Permanent Decentralized File Storage
 
-Moving the backend storage to the IPFS filesystem allows any uploaded content to Supload to be available in a permanent manner. IPFS is censorship proof file storage that is guaranteed to exist as long as the internet is working.
+Moving the backend storage to the IPFS filesystem allows any uploaded content to Supload to be available in a permanent manner. IPFS is censorship proof file storage that is guaranteed to exist as long as the Internet is working.
 
-* **User Benefits -** Video and image hosting sites are notoriously prone to shutting down or having to censor content due to pressure from governments or advertisers. Whether it is from legal pressure for the content they are hosting, or the costs of operation become unbearable.
-* **Message Board Benefits -** When a media hosting site goes down, the links to that content are still spread throughout the internet. Broken image links are a longstanding problem for message boards and content aggregation sites such as Reddit. Forcing most moderators to only accept links to a few of the most trusted centralized hosts. But no website can guarantee to operate forever.
+* **User Benefits -** Video and image hosting sites are notoriously prone to shutting down or having to censor content due to pressure from governments or advertisers. Whether it is from legal pressure for the content they are hosting, or the costs of operation becomes unbearable.
+* **Message Board Benefits -** When a media hosting site goes down, the links to that content are still spread throughout the Internet. Broken image links are a longstanding problem for message boards and content aggregation sites such as Reddit. Forcing most moderators to only accept links to a few of the most trusted centralized hosts. The issue is that no website can guarantee to operate forever.
 
 ### 2.1 Data resolution
-Content on IPFS is addressed by a cryptographic hash of the content of the file. IPFS then uses it's own location resolution system built on a Distributed Hash Table. It's much more efficient than the current IPv4 location based system the internet uses. It's quite revolutionary to think of data storage not as, where in the world is the server located that has this data, but rather, who in the world has the file with these contents.
+Content on IPFS is addressed by a cryptographic hash of the content of the file. IPFS then uses its own location resolution system built on a Distributed Hash Table. It is much more efficient than the current IPv4 location based system the Internet uses. It is quite revolutionary to think of data storage not as, where in the world is the server located that has this data, but rather, who in the world has the file with these contents.
 
 ### 2.2 Fetching content if supload.com does not resolve
 
-TODO: description of rewriting links directly to the media in ipfs
+TODO: description of rewriting links directly to the media in IPFS
 
 #```https://www.supload.com/<ipfshash1>```
 
@@ -91,7 +91,7 @@ TODO: description of rewriting links directly to the media in ipfs
 With IPFS's content hash storage, deduplication of storage is an automatically built in feature. This is an extremely efficient method for mass storage. Duplicate posts of the same data will result in pointing to one copy of the file since the resulting cryptographic hash will be identical.
 
 ### 2.4 Blockchains in IPFS
-The merkle DAG structure found in blockchains can be easily replicated in IPFS. Past blocks can always be linked by their hash from later ones. The state database that Ethereum uses, can be modeled in IPFS. So storing the current state of Supload can follow the same state model.
+The merkle DAG structure found in blockchains can be easily replicated in IPFS. Past blocks can always be linked by their hash from later ones. The state database that Ethereum uses, can be modeled in IPFS and storing the current state of Supload can follow the same state model.
 
 Every block in the Supload chain will have a merkleized trie of the current state, a merkle tree of transactions, and a reference to the prior state being modified. Using IPFS to store the state and transaction trees will allow miners to only store small set of data on chain. The deduplication we gain on IPFS can be seen below. Only the state entries that have changed between two blocks will need to be stored.
 
@@ -124,9 +124,9 @@ This allows a visitor of the site to move to the chain tip of the category they 
 
 ## 4.0 Decentralized Image and Video Compression
 
-The computation needed for image and video Compression is extremely CPU intensive. For the future full length video update to Supload, video files need to be compressed to multiple resolutions (360p, 540p, 720p) to enable a smooth browsing experience depending on users bandwidth. Those different resolution files then need to be split into short one second chunks, to be able to facilitate smooth switching of resolutions depending on deteriorating or improving network conditions.
+The computation needed for image and video compression is extremely CPU intensive. For the future full length video update to Supload, video files need to be compressed to multiple resolutions (360p, 540p, 720p) to enable a smooth browsing experience depending on users bandwidth. Those different resolution files then need to be split into short one second chunks, to be able to facilitate smooth switching of resolutions depending on deteriorating or improving network conditions.
 
-The golem network[5] offers renting out idle CPU cycles from its network of users. Docker images with binaries for compression and chunking can be uploaded to their Application Registry. Golem network users can reference data stored in IPFS. Run the necessary computation for compression, and upload the finished product back into IPFS.
+The Golem network[5] offers renting out idle CPU cycles from its network of users. Docker images with binaries for compression and chunking can be uploaded to their Application Registry. Golem network users can reference data stored in IPFS. Run the necessary computation for compression, and upload the finished product back into IPFS.
 
 ### 4.1 Docker images in Golem
 
@@ -143,13 +143,13 @@ The current site infrastructure is reliant entirely on Amazon Web Services for o
 
 Completely decentralizing the backend to Supload will give any developer the ability to create apps and website front ends to our content. They are free to monetize any way they see fit.
 
-This will ensure the long term survival of our blockchain and company. Giving developers access to our backend is giving them access to an already built and thriving social network. No longer having to worry about building a product, then bootstrapping the first users and building a community. They are free to focus on the interface to our content only. This is effectively, crowdsourcing user interfaces.
+This will ensure the long term survival of our blockchain and company. Giving developers access to our backend is giving them access to an already built and thriving social network, no longer having to worry about building a product, then bootstrapping the first users and building a community. They are free to focus on the interface to our content only. This is effectively, crowdsourcing user interfaces.
 
 ### 5.1 Crowdsourcing user interfaces
 
 Completely opening up the Supload backend will allow rapid experimentation of interfaces by developers. Websites and apps that would normally be our competitor, now strengthen our product.
 
-Free to rapidly explore new ideas, we will never be able to predict what developers around the world will come up with. Maybe it's new monetization strategies around having users solve hashes in their web browsers to mine cryptocurrencies. Or a new way to interact with a touchscreen interface that no one has thought of. Developers will be able to iterate rapidly.
+Free to rapidly explore new ideas, we will never be able to predict what developers around the world will come up with. Maybe it is new monetization strategies around having users solve hashes in their web browsers to mine cryptocurrencies. Or a new way to interact with a touchscreen interface that no one has thought of. Regardless, developers will be able to iterate rapidly.
 
 ![Image of decentralized infrastructure](https://i.supload.com/r1xZ28olob.png)
 
@@ -159,7 +159,7 @@ The current Supload website, with our ad revenue sharing business model, will al
 
 ### 5.3 Supload blockchain division
 
-Making the backend decentralized and public creates a new revenue stream for Supload. A certain amount of SUP token will always be required to be included in our blockchain. Whether it's uploading a video, making a comment, upvoting / downvoting a post, will require a small fee. Supload will take a small portion of these fees to continue blockchain development. A majority of the fee will go to miner rewards for running the computation to ensure the correctness and security of our blockchain.
+Making the backend decentralized and public creates a new revenue stream for Supload. A certain amount of SUP token will always be required to be included in our blockchain. Whether it is uploading a video, making a comment, upvoting / downvoting a post, will require a small fee. Supload will take a small portion of these fees to continue blockchain development. A majority of the fee will go to miner rewards for running the computation to ensure the correctness and security of our blockchain.
 
 
 ## 6.0 SUP Token Utility
