@@ -126,13 +126,9 @@ This allows a visitor of the site to move to the chain tip of the category they 
 
 The computation needed for image and video compression is extremely CPU intensive. For the future full length video update to Supload, video files need to be compressed to multiple resolutions (360p, 540p, 720p) to enable a smooth browsing experience depending on users bandwidth. Those different resolution files then need to be split into short one second chunks, to be able to facilitate smooth switching of resolutions depending on deteriorating or improving network conditions.
 
-The Golem network[5] offers renting out idle CPU cycles from its network of users. Docker images with binaries for compression and chunking can be uploaded to their Application Registry. Golem network users can reference data stored in IPFS. Run the necessary computation for compression, and upload the finished product back into IPFS.
+The Golem network offers renting out idle CPU cycles from its network of users. Docker images with binaries for compression and chunking video can be uploaded to their Application Registry. Golem network users can reference data stored in IPFS. Run the necessary computation for compression, and upload the finished product back into IPFS.
 
-### 4.1 Docker images in Golem
-
-TODO: description of docker images in Golem
-
-
+The Plasma contract on the Ethereum blockchain can then update the Supload state files in IPFS to reference the new compressed multi resolution video files.
 
 
 ## 5.0 Decentralized Websites
