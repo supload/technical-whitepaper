@@ -110,7 +110,7 @@ Commitments are broadcasted periodically to the root blockchain from the child P
 
 TODO: Move this to Sup token section at bottom? Decentralized applications can be reframed as a MapReduce problem with economic incentives for correct activity bonded by the Sup token.
 
-### 3.3 Scalability with blockchains in blockchains
+### 3.2 Scalability with blockchains in blockchains
 
 Plasma offers the ability to scale computation by separating data into multiple sub blockchains from the root Plasma chain. This would allow Supload to scale infinitely without running into a problem of block size getting so large miners won't want to participate.
 
